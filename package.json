@@ -1,0 +1,26 @@
+{
+  "name": "delivery-agent-management-system",
+  "version": "1.0.0",
+  "description": "Full-stack Delivery Agent Management System with Node.js, Redis Caching, and SQLite/PostgreSQL persistence",
+  "scripts": {
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "build": "cd server && npm run build && cd ../client && npm run build",
+    "test": "cd server && npm test",
+    "seed": "cd server && npm run db:seed"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "keywords": [
+    "delivery-agent",
+    "redis",
+    "nodejs",
+    "crud",
+    "express"
+  ],
+  "author": "",
+  "license": "MIT"
+}
